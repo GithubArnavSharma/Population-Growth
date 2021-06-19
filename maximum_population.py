@@ -11,12 +11,11 @@ y = np.array(df['Population']) / 1000000000
 
 model = pm.auto_arima(y, seasonal=True, m=12)
 preds = np.ravel(model.predict(n_periods=100))[:80]
-
-X_test = [i for i in range(2020, 2101)]
+years = [i for i in range(2020, 2101)]
 
 sns.set_theme()
 plt.plot(X, y, color='blue')
-plt.plot(X_test, preds, color='red')
+plt.plot(years, preds, color='red')
 plt.xlabel('Year')
 plt.ylabel('Population(billion)')
 plt.show()
