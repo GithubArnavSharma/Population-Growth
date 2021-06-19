@@ -6,6 +6,7 @@ import pmdarima as pm
 
 df = pd.read_csv('WorldPopulation.csv')
 df = df.sort_values('Year')
+X = np.array(df['Year'])
 y_population = np.array(df['Population']) / 1000000000
 y_change = np.array(df['ChangePerc'])
 
