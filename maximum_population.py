@@ -11,8 +11,8 @@ y_population = np.array(df['Population']) / 1000000000
 
 y_change = np.array(df['ChangePerc'])
 
-model = pm.auto_arima(y_change, seasonal=True, m=4)
-preds = np.ravel(model.predict(n_periods=100))[:80]
+model = pm.auto_arima(y_change, seasonal=True, m=12)
+preds = np.ravel(model.predict(n_periods=80))
 
 X_test = [i for i in range(2020, 2101)]
 population_pred = [y_population[-1]]
