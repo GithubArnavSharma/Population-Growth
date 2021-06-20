@@ -2,6 +2,8 @@
 
 During the 20th century, the total world population has increased by 4-fold. The current world population as of 2019 is 7.6 billion, and is showing no signs of slowing down. Research has shown that the Earth as of right now can only provide enough resources for 10 billion people, so the rise in population is causing many population alarmists to worry about potential disasters stemming from too high demand for essential resources.  
 
+Based on past data on population statistics, population growth can be predicted and explored upon using statistical models such as ARIMA. ARIMA is an acronym for “autoregressive integrated moving average", and is a model used in statistics and economics to predict future data in a series. In this statistical study, ARIMA will be used for population series predictions. 
+
 Purely taking into account the world population since 1960, population alarmists seem to have a good point. Based on the current population trend, the world population would be projected to hit 14 billion by 2100, way over the maximum capacity Earth can sustain.
 
 ![linepred](https://user-images.githubusercontent.com/77365987/122656716-13fe9500-d112-11eb-8345-f20ef7aa50cd.png)
